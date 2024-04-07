@@ -11,19 +11,23 @@ export function Grid() {
     {
       id: "span-col-3 span-row-3",
       styles: "name-card",
-      component:  <PicturProfile/> 
+      component: <PicturProfile />
     },
     {
       id: "span-row-3 ",
       styles: "contact-card",
-      component: <ContactLinks/>
+      component: <ContactLinks />
     },
     {
       id: "span-row-3 span-col-2",
       styles: "about-me-card",
-      component: <AboutMe/>
+      component: <AboutMe />
     },
-    { id: "span-row-5 ", text: 'Item 5' },
+    {
+      id: "span-row-5 ",
+      styles: "curriculum",
+      component: <Curriculum />
+    },
     { id: "span-row-2 span-col-3", text: 'Item 6' },
   ];
 
@@ -50,12 +54,12 @@ export function PicturProfile() {
   )
 }
 
-export function AboutMe(){
-   return(
-      <h1>
-        About Me
-      </h1>
-   )
+export function AboutMe() {
+  return (
+    <h1>
+      About Me
+    </h1>
+  )
 }
 
 export function ContactLinks() {
@@ -65,14 +69,24 @@ export function ContactLinks() {
         <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="GitHub" />
       </div>
       <div>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Wb7G67EcR44qT3KQLlLzI1Fna_L2lPXfTI1sx8_z2w&s" alt="Linkedin" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Wb7G67EcR44qT3KQLlLzI1Fna_L2lPXfTI1sx8_z2w&s" alt="Linkedin" />
       </div>
       <div>
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaw8f0e4ZeGFhsEY8Ry2WFAwJIPEm0nf87gwKxe-ZkDA&s" alt="GitHub" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaw8f0e4ZeGFhsEY8Ry2WFAwJIPEm0nf87gwKxe-ZkDA&s" alt="GitHub" />
       </div>
       <div>
-      <img src="https://play-lh.googleusercontent.com/knRmgMgfpqdOPijUx_py74Z5anu-ry0O0bTYqdklFVbUqcPkGtYd_lCZJiE1AXRXMA" alt="GitHub" />
+        <img src="https://play-lh.googleusercontent.com/knRmgMgfpqdOPijUx_py74Z5anu-ry0O0bTYqdklFVbUqcPkGtYd_lCZJiE1AXRXMA" alt="GitHub" />
       </div>
     </article>
   );
+}
+
+export function Curriculum() {
+
+  return (
+    <div>
+      <h1> Descargar CV </h1>
+    </div>
+  )
+
 }

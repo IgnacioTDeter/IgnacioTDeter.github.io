@@ -137,3 +137,23 @@ main{
   text-align: left;
 }
 
+.curriculum{
+  background: linear-gradient(-45deg, #7FFFD4, #00b2a9, #01a6a6 90%);
+
+
+  border: none;
+  background-size: 200% 100%;
+  transition: background-position 1s;
+  cursor: pointer;
+}
+
+.curriculum:hover{
+  background-position: 100% 0
+}
+
+.curriculum h1{
+  font-size: 27px;
+  color: aliceblue;
+  margin: 0 0 2vh 10px;
+  text-align: left;
+}
