@@ -25,6 +25,12 @@ export function Grid() {
     },
     { id: "span-row-5 ", text: 'Item 5' },
     { id: "span-row-2 span-col-3", styles: 'my-skills-card', component: <MySkills /> },
+    {
+      id: "span-row-5 ",
+      styles: "curriculum",
+      component: <Curriculum />
+    },
+    { id: "span-row-2 span-col-3", text: 'Item 6' },
   ];
 
   return (
@@ -83,4 +89,15 @@ export function MySkills() {
       <img src="https://skillicons.dev/icons?i=git,github,html,css,js,nodejs,react,mysql,vscode&perline=14" alt="" />
     </div>
   );
+}
+
+
+export function Curriculum() {
+
+  return (
+    <div>
+      <h1> Descargar CV </h1>
+    </div>
+  )
+
 }
