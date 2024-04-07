@@ -137,6 +137,44 @@ main{
   text-align: left;
 }
 
+.my-skills-card{
+  background-color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-skills-card img{
+  max-width: 100%;
+}
+
+.projects-container{
+  width: 100%;
+  height: auto;
+  background: linear-gradient(195deg, #363636, #000000  );
+  margin-top: 4vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1vh 0px 10vh 0px;
+  border-radius: 13px;
+}
+.projects-container h3{
+  width: 95%;
+  font-size: 28px;
+  text-align: left; 
+  color: #ccc;
+}
+
+.project{
+  width: 95%;
+  height: 15vh;
+  border-radius: 10px;
+  background-color: #232323;
+}
+
 .curriculum{
   background: linear-gradient(-45deg, #7FFFD4, #00b2a9, #01a6a6 90%);
 

@@ -23,6 +23,8 @@ export function Grid() {
       styles: "about-me-card",
       component: <AboutMe />
     },
+    { id: "span-row-5 ", text: 'Item 5' },
+    { id: "span-row-2 span-col-3", styles: 'my-skills-card', component: <MySkills /> },
     {
       id: "span-row-5 ",
       styles: "curriculum",
@@ -80,6 +82,15 @@ export function ContactLinks() {
     </article>
   );
 }
+
+export function MySkills() {
+  return (
+    <div style={{ alignItems: 'center', justifyContent: 'center', display: 'flex' }}>
+      <img src="https://skillicons.dev/icons?i=git,github,html,css,js,nodejs,react,mysql,vscode&perline=14" alt="" />
+    </div>
+  );
+}
+
 
 export function Curriculum() {
 
