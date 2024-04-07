@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+body {
+  font-family: "M PLUS Rounded 1c"; /* Utiliza el nombre de la fuente proporcionado por Google Fonts */
+  margin: auto;
+  background-color: #28004F;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.main-container{
+  width: 40%;
+  height: 100%;
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 10 columnas de igual ancho */
+  grid-auto-rows: minmax(50px, auto);
+  gap: 10px; /* Espacio entre las celdas */
+  margin-top: 10vh;
+}
+
+.grid-item {
+  background-color: #ccc; /* Color de fondo de las celdas */
+  border: 1px solid #999; /* Borde de las celdas */
+  padding: 10px; /* Espacio interno de las celdas */
+  text-align: center; /* Centrar contenido */
+  border-radius: 13px;
+}
+
+
+.span-col-2 {
+  grid-column: span 2; /* Este elemento ocupará 2 columnas */
+}
+
+.span-col-3{
+  grid-column: span 3; /* Este elemento ocupará 2 columnas */
+}
+
+.span-row-2{
+  grid-row: span 2;
+}
+
+.span-row-3{
+  grid-row: span 3;
+}
+
+.span-row-5{
+  grid-row: span 5;
+}
+
+.name-card {
+  background: linear-gradient(195deg,  #42f0db, #8a3af4, #5300BC 80%);
+  border: none;
+  background-size: 200% 100%;
+  transition: background-position 1s;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+.name-card:hover {
+  background-position: 100% 0;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 90%;
+  }
+  100% {
+    background-position: 0% 180%;
+  }
+}
+
+.name-card h1{
+  
+  font-size: 45px;
+  color: aliceblue;
+  margin: 0 0 1vh 10px;
+  text-align: left;
+}
+
+.name-card h2{
+  font-size: 27px;
+  color: aliceblue;
+  margin: 0 0 2vh 10px;
+  text-align: left;
+}
+
+.contact-card{
+  background: linear-gradient(45deg, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0.4));
+  border: none;
+}
+
+.contact-card article{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual ancho */
+  grid-auto-rows: minmax(50px, auto);
+  gap: 5px;
+}
+
+.contact-card img{
+  border-radius: 10px;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.about-me-card{
+  background: linear-gradient(-195deg, #FFA500, #FF6347, #FFD700 90% );
+
+
+  border: none;
+  background-size: 200% 100%;
+  transition: background-position 1s;
+  cursor: pointer;
+}
+
+.about-me-card:hover{
+  background-position: 80% 0;
+}
+
+.about-me-card h1{
+  font-size: 27px;
+  color: aliceblue;
+  margin: 0 0 2vh 10px;
+  text-align: left;
+}
+
