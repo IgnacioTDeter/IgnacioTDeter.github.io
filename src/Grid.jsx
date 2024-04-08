@@ -23,14 +23,13 @@ export function Grid() {
       styles: "about-me-card",
       component: <AboutMe />
     },
-    { id: "span-row-5 ", text: 'Item 5' },
-    { id: "span-row-2 span-col-3", styles: 'my-skills-card', component: <MySkills /> },
     {
       id: "span-row-5 ",
       styles: "curriculum",
       component: <Curriculum />
     },
-    { id: "span-row-2 span-col-3", text: 'Item 6' },
+    { id: "span-row-2 span-col-3", styles: 'my-skills-card', component: <MySkills /> },
+   
   ];
 
   return (
