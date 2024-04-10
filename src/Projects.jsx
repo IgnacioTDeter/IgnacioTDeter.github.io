@@ -11,8 +11,8 @@ export function Projects() {
         },
         {
             id: 2,
-            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, alias velit. Consequuntur blanditiis id ea hic vel? Expedita officiis quamLorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nam, corrupti repellat quas aut deserunt culpa consectetur tempora quidem reprehenderit nisi harum natus aspernatur molestiae? Velit natus ipsa incidunt repellat?",
-            languages: [<HTML />, <CSS />, <JavaScript/>, <React/>],
+            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, alias velit. Consequuntur blanditiis id ea hic vel? Expedita officiis quamLorem ipsum ",
+            languages: [<HTML />, <CSS />, <JavaScript/>],
             title: "Sistema de gestion 'Pañol'"
         }
     ]

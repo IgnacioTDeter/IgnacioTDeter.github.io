@@ -6,6 +6,7 @@ export function Grid() {
   const gridItems = [
     {
       id: "span-row-3",
+      style: "profile",
       component: 'Item 1'
     },
     {
@@ -36,7 +37,7 @@ export function Grid() {
 
     <section className='grid-container'>
       {gridItems.map(item => (
-        <article className={`grid-item ${item.styles} ${item.id}`}>
+        <article className={`grid-item ${item.styles} ${item.id} ${item.component.type === ContactLinks ? 'grid-item-contact-card' : null}`}>
           {item.component ? item.component : null}
         </article>
       ))}
