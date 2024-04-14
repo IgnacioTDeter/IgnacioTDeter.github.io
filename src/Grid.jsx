@@ -2,11 +2,10 @@
 
 export function Grid() {
 
-
   const gridItems = [
     {
       id: "span-row-3",
-      style: "profile",
+      styles: "profile",
       component: 'Item 1'
     },
     {
@@ -27,24 +26,31 @@ export function Grid() {
     {
       id: "span-row-5 ",
       styles: "curriculum",
-      component: <Curriculum />
+      component: "Curriculum" // Cambiado para que coincida con la condición
     },
     { id: "span-row-2 span-col-3", styles: 'my-skills-card', component: <MySkills /> },
-   
+
   ];
 
   return (
-
     <section className='grid-container'>
       {gridItems.map(item => (
-        <article className={`grid-item ${item.styles} ${item.id} ${item.component.type === ContactLinks ? 'grid-item-contact-card' : null}`}>
-          {item.component ? item.component : null}
-        </article>
+        item.component === "Curriculum" ? (
+          <a href='./archivos/Curriculum-ignacio-deter.pdf' download='Curriculum-ignacio-deter' className={`grid-item ${item.styles} ${item.id}`}>
+            <article>
+              <Curriculum />
+            </article>
+          </a>
+        ) : (
+          <article className={`grid-item ${item.styles} ${item.id} ${item.component.type === ContactLinks ? 'grid-item-contact-card' : null}`}>
+            {item.component}
+          </article>
+        )
       ))}
     </section>
-
   );
 }
+
 
 export function PicturProfile() {
   return (
@@ -92,12 +98,14 @@ export function MySkills() {
 }
 
 
+
+
 export function Curriculum() {
 
   return (
-    <div>
-      <h1> Descargar CV </h1>
+    <div href='./archivos/Curriculum-ignacio-deter.pdf' download='Curriculum'>
+      <h1>Descargar CV</h1>
     </div>
-  )
-
+  );
 }
+
