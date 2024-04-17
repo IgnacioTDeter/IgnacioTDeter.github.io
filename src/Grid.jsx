@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { AboutMePopup } from './AboutMePopup';
+import pictureProfile from './img/profile-picture.png'
 
 export function Grid() {
 
@@ -61,8 +62,8 @@ export function popUp(){
 
 export function ProfilePicture() {
   return (
-    <article className={`grid-item profile span-row-3`}>
-      Item 1
+    <article className={`grid-item span-row-3 profile-picture`}>
+      <img src= {pictureProfile} alt="" />
     </article>
   )
 

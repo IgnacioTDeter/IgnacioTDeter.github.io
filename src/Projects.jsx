@@ -1,3 +1,5 @@
+import wordleImage from './img/wordle.webp';
+
 
 export function Projects() {
 
@@ -5,6 +7,7 @@ export function Projects() {
     const projectList = [
         {
             id: 1,
+            img: wordleImage ,
             text: "Wordle es un juego simple, donde los jugadores intentan adivinar una palabra de cinco letras en seis intentos.",
             languages: [<HTML />, <CSS />, <JavaScript/>, <React/>],
             title: "Wordle"
@@ -24,7 +27,7 @@ export function Projects() {
 
             {projectList.map(project => (
                 <article className="project">
-                    <img src="https://img.freepik.com/foto-gratis/pintura-lago-montana-montana-al-fondo_188544-9126.jpg" alt="" />
+                    <img src= {project.img} alt="pedritooo" />
 
 
                     <article>
