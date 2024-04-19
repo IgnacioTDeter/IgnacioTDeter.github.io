@@ -14,6 +14,7 @@ export function Projects() {
         },
         {
             id: 2,
+            img: wordleImage,
             text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, alias velit. Consequuntur blanditiis id ea hic vel? Expedita officiis quamLorem ipsum ",
             languages: [<HTML />, <CSS />, <JavaScript/>],
             title: "Sistema de gestion 'Pañol'"
@@ -27,7 +28,7 @@ export function Projects() {
 
             {projectList.map(project => (
                 <article className="project">
-                    <img src= {project.img} alt="pedritooo" />
+                    <img className="project-img" src= {project.img} alt="pedritooo" />
 
 
                     <article>

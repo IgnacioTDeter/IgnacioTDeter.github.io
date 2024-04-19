@@ -311,6 +311,7 @@ main{
 
 .popUp-container{
   grid-column: span 4;
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   background-color: #2c2c2c;
@@ -340,7 +341,7 @@ main{
     grid-template-columns: repeat(3, 1fr); /* 4 columnas de igual ancho */
     grid-auto-rows: minmax(50px, auto);
     gap: 0.7rem; /* Espacio entre las celdas */
-    margin-top: 10vh;
+    margin-top: 4vh;
   }
   .about-me-card{
     grid-column: span 2;
@@ -349,9 +350,21 @@ main{
   .profile-picture{
     width: 170px;
   }
+  .popUp-container{
+    grid-row: 11;
+  }
   .curriculum{
     grid-row: span 1;
     grid-row: 10;
     grid-column: span 3;
+  }
+  .project{
+    flex-direction: column;
+  }
+  .project img.project-img{
+    width: 93%;
+  }
+  .project article{
+    padding: 10px;
   }
 }
