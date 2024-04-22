@@ -3,6 +3,8 @@ import { AboutMePopup } from './AboutMePopup';
 import pictureProfile from './img/profile-picture.webp'
 import cellphoneContact from './img/telefono.webp'
 import linkedinContact from './img/linkedin_.webp'
+import githubContact from './img/github.webp'
+import gmailContact from './img/gmail.webp'
 
 import { AppContext } from "./App";
 
@@ -104,16 +106,16 @@ export function ContactLinks() {
     <article className={`grid-item contact-card span-row-3 `}>
       <article>
         <div>
-          <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="GitHub" />
+          <img src={githubContact} alt="GitHub" />
         </div>
         <div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Wb7G67EcR44qT3KQLlLzI1Fna_L2lPXfTI1sx8_z2w&s" alt="Linkedin" />
+          <img src={gmailContact} alt="Linkedin" />
         </div>
         <div>
-          <img src={linkedinContact} alt="GitHub" />
+          <img src={linkedinContact} alt="Linkedin" />
         </div>
         <div>
-          <img src={cellphoneContact} alt="GitHub" />
+          <img src={cellphoneContact} alt="Telefono" />
         </div>
       </article>
     </article>

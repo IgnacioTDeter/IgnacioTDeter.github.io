@@ -15,6 +15,7 @@ function App() {
   };
 
   return (
+    
     <main>
       <section className='main-container'>
         {/* Pasar el valor y la función al proveedor de contexto */}

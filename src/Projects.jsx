@@ -7,16 +7,16 @@ export function Projects() {
     const projectList = [
         {
             id: 1,
-            img: wordleImage ,
+            img: wordleImage,
             text: "Wordle es un juego simple, donde los jugadores intentan adivinar una palabra de cinco letras en seis intentos.",
-            languages: [<HTML />, <CSS />, <JavaScript/>, <React/>],
+            languages: [<HTML />, <CSS />, <JavaScript />, <React />],
             title: "Wordle"
         },
         {
             id: 2,
             img: wordleImage,
-            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, alias velit. Consequuntur blanditiis id ea hic vel? Expedita officiis quamLorem ipsum ",
-            languages: [<HTML />, <CSS />, <JavaScript/>],
+            text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, alias velit. Consequuntur blanditiis id ea hic vel? Expedita officiis quamLorem ipsum Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, alias velit. Consequuntur blanditiis id ea hic vel? Expedita officiis quamLorem ipsum Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis, alias velit. Consequuntur blanditiis id ea hic vel? Expedita officiis quamLorem ipsum  ",
+            languages: [<HTML />, <CSS />, <JavaScript />, <MySQL />],
             title: "Sistema de gestion 'Pañol'"
         }
     ]
@@ -28,7 +28,7 @@ export function Projects() {
 
             {projectList.map(project => (
                 <article className="project">
-                    <img className="project-img" src= {project.img} alt="pedritooo" />
+                    <img className="project-img" src={project.img} alt="pedritooo" />
 
 
                     <article>
@@ -81,7 +81,7 @@ export function JavaScript() {
 
 }
 
-export function React(){
+export function React() {
     return (
         <div className="language-container">
             React
@@ -90,4 +90,17 @@ export function React(){
             </div>
         </div>
     )
+}
+
+export function MySQL() {
+
+    return (
+        <div className="language-container">
+            MySQL
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968363.png" alt="" />
+            </div>
+        </div>
+    )
+
 }

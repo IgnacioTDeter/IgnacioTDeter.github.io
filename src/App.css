@@ -306,6 +306,8 @@ main{
 
 .language-container img{
   width: auto;
+  border-radius: 0;
+  margin-right: 10px;
 }
 
 
