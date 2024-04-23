@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
 
+:root {
+
+  --text-color: aliceblue;
+}
+
 body {
   font-family: "M PLUS Rounded 1c"; /* Utiliza el nombre de la fuente proporcionado por Google Fonts */
   margin: auto;
@@ -108,14 +113,14 @@ main{
 .name-card h1{
   
   font-size: 45px;
-  color: aliceblue;
+  color: var(--text-color);
   margin: 0 0 1vh 10px;
   text-align: left;
 }
 
 .name-card h2{
   font-size: 27px;
-  color: aliceblue;
+  color:var(--text-color);
   margin: 0 0 2vh 10px;
   text-align: left;
 }
@@ -163,7 +168,7 @@ main{
   grid-column: span 3;
   grid-row: span 5;
   background: linear-gradient(-195deg, #1a1a1a, #000000, #333333 90%);
-  color: #d1d1d1;
+  color:var(--text-color);
   border: none;
   width: auto;
   height: auto;
@@ -181,7 +186,7 @@ main{
 
 .about-me-card h1{
   font-size: 27px;
-  color: aliceblue;
+  color: var(--text-color);
   margin: 0 0 2vh 10px;
   text-align: left;
 }
@@ -214,7 +219,7 @@ main{
 
 .curriculum h1{
   font-size: 27px;
-  color: aliceblue;
+  color: var(--text-color);
   margin: 0 0 2vh 10px;
   text-align: left;
   
@@ -236,7 +241,7 @@ main{
   width: 95%;
   font-size: 28px;
   text-align: left; 
-  color: #ccc;
+  color: var(--text-color);
 }
 
 .project{
@@ -250,7 +255,7 @@ main{
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  color: #ccc;
+  color: var(--text-color);
   font-size: 1.6vh;
   transition:  0.2s;
 }
@@ -324,7 +329,7 @@ main{
 .popUp-info{
   width: 100%;
   padding: 2rem;
-  color: whitesmoke;
+  color: var(--text-color);
 }
 
 .button-popup{
@@ -332,7 +337,7 @@ main{
   height: 4vh;
   background-color: #be4f00;
   cursor: pointer;
-  color: rgb(255, 255, 255);
+  color: var(--text-color);
   border-radius: 3px;
   border: none;
 }

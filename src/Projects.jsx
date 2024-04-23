@@ -1,4 +1,10 @@
 import wordleImage from './img/wordle.webp';
+import  HTMLicon  from './img/htmlicon.webp'
+import  CSSicon  from './img/cssicon.webp';
+import  JSicon  from './img/jsicon.webp';
+import  REACTicon  from './img/reacticon.webp';
+import  MYSQLicon from './img/mysqlicon.webp';
+
 
 
 export function Projects() {
@@ -50,7 +56,7 @@ export function HTML() {
         <div className="language-container">
             HTML
             <div>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/800px-HTML5_logo_and_wordmark.svg.png" alt="" />
+                <img src= {HTMLicon} alt="" />
             </div>
         </div>
     )
@@ -62,7 +68,7 @@ export function CSS() {
         <div className="language-container">
             CSS
             <div>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" alt="" />
+                <img src= {CSSicon} alt="" />
             </div>
         </div>
     )
@@ -74,7 +80,7 @@ export function JavaScript() {
         <div className="language-container">
             JavaScript
             <div>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1200px-Unofficial_JavaScript_logo_2.svg.png" alt="" />
+                <img src= {JSicon} alt="" />
             </div>
         </div>
     )
@@ -86,7 +92,7 @@ export function React() {
         <div className="language-container">
             React
             <div>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/1200px-React.svg.png" alt="" />
+                <img src= {REACTicon} alt="" />
             </div>
         </div>
     )
@@ -98,7 +104,7 @@ export function MySQL() {
         <div className="language-container">
             MySQL
             <div>
-                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968363.png" alt="" />
+                <img src= {MYSQLicon} alt="" />
             </div>
         </div>
     )
