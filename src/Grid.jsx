@@ -62,16 +62,16 @@ export function Grid() {
 
 
 
-export function ProfilePicture() {
+ function ProfilePicture() {
   return (
-    <article className={`grid-item span-row-3 profile-picture`}>
-      <img src={pictureProfile} alt="" />
+    <article className={`grid-item span-row-3 profile-picture`} fetchpriority="high">
+      <img src={pictureProfile} alt="Foto de perfil" />
     </article>
   )
 
 }
 
-export function NameCard() {
+ function NameCard() {
   return (
     <article className={`grid-item name-card span-col-3 span-row-3`} >
       <div>
@@ -84,12 +84,12 @@ export function NameCard() {
   )
 }
 
-export function popUp(setIsClicked){
+ function popUp(setIsClicked){
   setIsClicked(prevState => !prevState);
 }
 
 
-export function AboutMe({ setIsClicked }) {
+ function AboutMe({ setIsClicked }) {
   return (
     <article
       className={`grid-item about-me-card span-row-3 span-col-2`}
@@ -101,7 +101,7 @@ export function AboutMe({ setIsClicked }) {
 }
 
 
-export function ContactLinks() {
+ function ContactLinks() {
   return (
     <article className={`grid-item contact-card span-row-3 `}>
       <article>
@@ -123,7 +123,7 @@ export function ContactLinks() {
   );
 }
 
-export function MySkills() {
+function MySkills() {
   return (
     <article className={`grid-item my-skills-card span-row-2 span-col-3 `}>
       <div style={{ alignItems: 'center', justifyContent: 'center', display: 'flex' }}>
@@ -135,7 +135,7 @@ export function MySkills() {
 }
 
 
-export function Curriculum() {
+function Curriculum() {
 
   return (
     <a href="./archivos/Curriculum-ignacio-deter.pdf" download="Curriculum-ignacio-deter" className={`grid-item curriculum span-row-5`}>
